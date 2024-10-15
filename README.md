@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# Reddit Front End Challenges
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+From [this Reddit post](https://old.reddit.com/r/Frontend/comments/1g1gdfy/technical_frontend_interview_assessments_ive_faced/). I found these little code challenges while scrolling on Reddit, so I figured I'd try them myself. They seemed quite doable, and so I built this repo to show how I'd do it.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Challenges are reposted below for clarity:
+1. Create a component that displays a recursive nested folder structure, displaying any files in the folder, and any subfolders. When a folder is clicked, display its contents
+2.Create a slider component with only javscript. No css or html. Create all elements and attributes with javascript in a single file.
+3. Create a pagination component that fetches a list and displays X items at a time. It should have buttons to show the first and last pages, as well as buttons to move to the previous and next page.
+4.Create a debounce function on an input field that displays a list of filtered items matching the input, updating on an interval passed into the debounce function.
+5.Create a promise that resolves a list of data to simulate an API call, and a component that displays its data.
+6. Create an event emitter class that can add an object to a list, retrieve the entire list, and remove items from the list.
+7. Create an accordion component in a React class component (not a functional component)
+8. Given X api endpoint, retrieve the data, and display a list of the items using an `async await` approach, as well as a `.then()` approach. 
