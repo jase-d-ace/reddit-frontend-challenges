@@ -1,15 +1,26 @@
-!DOCTYPE html
 <head>
 
 </head>
 <body>
-    <h1>slider</h1>
+    <h1>slider challenge</h1>
+    <h3>Create a slider component with only javscript. No css or html. Create all elements and attributes with javascript in a single file.</h3>
     <div class="slider-container">
         <span>Slider will go here</span>
         <div id="slider"></div>
+        <div id="counter">0</div>
     </div>
 </body>
 <script>
+    const newElement = document.createElement("input");
+    newElement.setAttribute("type", "range");
+    const container = document.getElementById("slider");
+    container.append(newElement);
+
+    newElement.addEventListener("input", e => {
+        const newValue = e.target.value;
+        const counterText = document.getElementById("counter");
+        counterText.innerText = newValue;
+    })
 
 </script>
 <style>
