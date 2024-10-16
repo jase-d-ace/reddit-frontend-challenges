@@ -1,5 +1,7 @@
 /*
-Challenge: Create an event emitter class that can add an object to a list, retrieve the entire list, and remove items from the list.
+Challenges: 
+ * Create an event emitter class that can add an object to a list, retrieve the entire list, and remove items from the list.
+ * Given X api endpoint, retrieve the data, and display a list of the items using an `async await` approach, as well as a `.then()` approach. 
  */
 
 class EventsEmitter {
@@ -23,6 +25,20 @@ class EventsEmitter {
             this.list = this.list.filter(rec => rec != item)
             return this.list;
         }
+    }
+
+    async asyncApiCall(url) {
+        const newData = await fetch(url);
+        const jsonData = await newData.json();
+
+        return [...jsonData]
+    }
+
+    apiCallWithThen(url) {
+        const newData = fetch(url)
+        .then( data => data.json())
+        .then(json => [...json])
+        return newData;
     }
 }
 
