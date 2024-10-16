@@ -1,0 +1,83 @@
+{
+    "root": {
+        "type": "folder",
+        "name": "root",
+        "children": [
+            {
+                "name": "folder1",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "subfolder1",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "name": "file1.txt",
+                                "type": "file",
+                                "size": "2KB"
+                            },
+                            {
+                                "name": "file2.txt",
+                                "type": "file",
+                                "size": "3KB"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "subfolder2",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "name": "file3.doc",
+                                "type": "file",
+                                "size": "4KB"
+                            },
+                            {
+                                "name": "file4.doc",
+                                "type": "file",
+                                "size": "1KB"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "file5.txt",
+                        "type": "file",
+                        "size": "5KB"
+                    }
+                ]
+            },
+            {
+                "name": "folder2",
+                "type": "folder",
+                "children": [
+                    {
+                        "name": "subfolder3",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "name": "file6.jpg",
+                                "type": "file",
+                                "size": "1.2MB"
+                            },
+                            {
+                                "name": "file7.jpg",
+                                "type": "file",
+                                "size": "1.5MB"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "file8.txt",
+                        "type": "file",
+                        "size": "7KB"
+                    },
+                    {
+                        "name": "file9.pdf",
+                        "type": "file",
+                        "size": "500KB"
+                    }
+                ]
+            }
+        ]
+    }
+}
