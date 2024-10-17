@@ -7,8 +7,8 @@ export default function PaginationComponent({ data=gamesList }) {
     const [currentPage, setCurrentPage] = useState(1)
     const numberOfPages = Math.floor(data.length / ELEMENTS_PER_PAGE)
 
-    const displayedElements = (list, start) => {
-        let rangeStart = start * ELEMENTS_PER_PAGE 
+    const displayedElements = (list) => {
+        let rangeStart = currentPage * ELEMENTS_PER_PAGE 
         let end = rangeStart + ELEMENTS_PER_PAGE
 
         return (
@@ -22,7 +22,7 @@ export default function PaginationComponent({ data=gamesList }) {
             <h3>Create a pagination component that fetches a list and displays X items at a time. It should have buttons to show the first and last pages, as well as buttons to move to the previous and next page.</h3>
             <div className="games-display">
                 <ul>
-                    { displayedElements(gamesList, currentPage) }
+                    { displayedElements(gamesList) }
                 </ul>
             </div>
             <div className="pagination-controls">
