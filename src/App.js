@@ -6,11 +6,17 @@ import DebouncedInput from './challenges/DebouncedInput';
 import PaginationComponent from './challenges/PaginationComponent';
 import SimulatedPromise from './challenges/SimulatedPromise';
 import Accordion from './challenges/Accordion';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
+    <nav>
+      {
+        ["", "recursive", "debounce", "pagination", "promise"].map(route => <Link to={`/${route}`}>{route == "" ? "home " : `${route} | `}</Link>)
+      }
+      <Link to="/accordion">accordion </Link>
+    </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recursive" element={<RecursiveNestedFolderDisplay />} />
