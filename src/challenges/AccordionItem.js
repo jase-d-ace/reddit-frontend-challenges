@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 export default function AccordionItem(review) {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div>
-            <span>{review.game_title}</span>
-            <span>{review.content}</span>
-            <span>{review.rating}</span>
+            <strong>{review.game_title} - {review.review_title}</strong> <span onClick={() => setIsOpen(!isOpen)}>More</span>
+            {isOpen && <div>
+                <strong>{review.rating}</strong> - <span>{review.content}</span> 
+            </div>}
         </div>
     )
 }
