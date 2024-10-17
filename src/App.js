@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
     <nav>
       {
-        ["", "recursive", "debounce", "pagination", "promise"].map(route => <Link to={`/${route}`}>{route == "" ? "home | " : `${route} | `}</Link>)
+        ["", "recursive", "debounce", "pagination", "promise"].map(route => <Link key={route} to={`/${route}`}>{route == "" ? "home | " : `${route} | `}</Link>)
       }
       <Link to="/accordion">accordion </Link>
     </nav>

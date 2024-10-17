@@ -16,7 +16,7 @@ export default function SimulatedPromise() {
                 <ul>
                     {
                         games && 
-                        games.map(game => <li>{game.title}</li>)
+                        games.map(game => <li key={game.title}>{game.title}</li>)
                     }
                 </ul>
             </div>
