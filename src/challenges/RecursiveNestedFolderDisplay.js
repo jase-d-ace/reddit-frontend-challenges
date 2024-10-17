@@ -20,22 +20,13 @@ export default function RecursiveNestedFolderDisplay() {
 
     return (
         <div>
-            <header>
-                <h1>Challenge:</h1>
-                <h3>Create a component that displays a recursive nested folder structure, displaying any files in the folder, and any subfolders. When a folder is clicked, display its contents</h3>
-            </header>
-            <div>
-                <code>
-                    {JSON.stringify(directory)}
-                </code>
-            </div>
-            <div>
-                <code>
-                    <ul>
-                        {renderDirectoryRecursively(directory.root)}
-                    </ul>
-                </code>
-            </div>
+            <h1>Challenge:</h1>
+            <h3>Create a component that displays a recursive nested folder structure, displaying any files in the folder, and any subfolders. When a folder is clicked, display its contents</h3>
+            <code>
+                <ul>
+                    {renderDirectoryRecursively(directory.root)}
+                </ul>
+            </code>
         </div>
     )
 }
