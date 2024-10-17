@@ -10,10 +10,6 @@ class Accordion extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log(this.state.reviews)
-    }
-
     render(){
         return (
             <div>
