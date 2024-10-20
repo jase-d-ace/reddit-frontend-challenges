@@ -17,7 +17,9 @@ export default function Terraform () {
                 <p>data here eventually</p>
                 { 
                     fetchedData &&
-                    JSON.stringify(fetchedData)
+                    <code>
+                        {JSON.stringify(fetchedData)}
+                    </code>
                 }
             </div>
         </div>
