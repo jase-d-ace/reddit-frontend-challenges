@@ -26,13 +26,13 @@ export default function PaginationComponent({ data=gamesList }) {
                 </ul>
             </div>
             <div className="pagination-controls">
-                <button disabled={currentPage == 1} onClick={() => setCurrentPage(1)} className="page-first">first</button>
-                <button disabled={currentPage == 1} onClick={() => setCurrentPage(currentPage - 1)} className="page-back">back</button>
+                <button disabled={currentPage === 1} onClick={() => setCurrentPage(1)} className="page-first">first</button>
+                <button disabled={currentPage === 1} onClick={() => setCurrentPage(currentPage - 1)} className="page-back">back</button>
                 {
-                    [...Array(numberOfPages)].map((num, i) => <span className={currentPage == i + 1 ? "active" : ""} key={num}>{i+1} </span>)
+                    [...Array(numberOfPages)].map((num, i) => <span className={currentPage === i + 1 ? "active" : ""} key={num}>{i+1} </span>)
                 }
-                <button disabled={currentPage == numberOfPages} onClick={() => setCurrentPage(currentPage + 1)} className="page-more">more</button>
-                <button disabled={currentPage == numberOfPages} onClick={() => setCurrentPage(numberOfPages)} className="page-last">last</button>
+                <button disabled={currentPage === numberOfPages} onClick={() => setCurrentPage(currentPage + 1)} className="page-more">more</button>
+                <button disabled={currentPage === numberOfPages} onClick={() => setCurrentPage(numberOfPages)} className="page-last">last</button>
             </div>
         </div>
     )
