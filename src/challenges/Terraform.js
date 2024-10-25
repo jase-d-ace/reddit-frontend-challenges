@@ -23,5 +23,5 @@ export default function Terraform () {
                 }
             </div>
         </div>
-)
+    )
 }
