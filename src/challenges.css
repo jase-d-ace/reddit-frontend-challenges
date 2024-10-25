@@ -1,3 +1,53 @@
+h1 {
+    margin-left: 0.5em;
+}
+
+h3 {
+    margin-left: 1em;
+}
+
+.accordion-container {
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.accordion {
+    width: 100vh;
+    padding-left: 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 0 0 1em;
+    box-shadow: 3px 3px 3px #DdDdDd;
+}
+
+.accordion-closed {
+    background-color: #F5F5F5;
+    border: 2px solid #D0D0D0;
+    border-radius: 5px;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accordion-open {
+    background-color: #F6F6F6;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid #F1F1F1;
+    height: 4em;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.more-button {
+    padding-right: 1em;
+}
+
 .active {
     font-weight: bold;
     text-decoration: underline;
