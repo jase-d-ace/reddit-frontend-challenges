@@ -6,6 +6,7 @@ import "../challenges.css";
 export default function AccordionItem(review) {
     const [isOpen, setIsOpen] = useState(false);
 
+    // animation tutorial: https://owlcation.com/stem/Animated-Accordion-with-React-JS
     const openAnimation = useSpring({
         from: {
             opacity: "0",
