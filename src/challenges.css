@@ -1,9 +1,70 @@
+body {
+    color: #323441
+}
+
 h1 {
     margin-left: 0.5em;
 }
 
 h3 {
     margin-left: 1em;
+}
+
+.games-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.pagination-controls {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-size: 100%;
+        font-family: inherit;
+        border: 0;
+        padding: 0;
+    }
+
+    span {
+        padding-top: 0.25em;
+        font-size: 1.5em;
+    }
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #55576A;
+    padding: 1em;
+    border-radius: 5px;
+    height: 15em;
+}
+
+.card-header {
+    height: 6em;
+    border-bottom: 1px solid #B4B5C2;
+    width: 100%;
+    
+    .title {
+        font-size: 1.5em;
+    }
+}
+
+.card-body {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .accordion-container {
