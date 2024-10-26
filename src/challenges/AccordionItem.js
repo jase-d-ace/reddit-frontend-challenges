@@ -1,9 +1,24 @@
 import { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 import "../challenges.css";
 
 export default function AccordionItem(review) {
     const [isOpen, setIsOpen] = useState(false);
+
+    const openAnimation = useSpring({
+        from: {
+            opacity: "0",
+            maxHeight: "0"
+        },
+        to: {
+            opacity: isOpen ? "1" : "0",
+            maxHeight: isOpen ? "4em" : "0"
+        },
+        config: {
+            duration: "200"
+        }
+    })
 
     return (
         <div className="accordion-container">
@@ -12,9 +27,9 @@ export default function AccordionItem(review) {
                     <strong>{review.game_title} - {review.review_title} </strong> 
                     <span className="more-button">{isOpen ? "Less" : "More"}</span>
                 </div>
-                {isOpen && <div className="accordion-open content">
+                <animated.div className="accordion-open content" style={openAnimation}>
                     <strong>{review.rating}/10</strong> - <span>{review.content}</span> 
-                </div>}
+                </animated.div>
             </div>
         </div>
     )

@@ -16,6 +16,7 @@ h3 {
 .accordion {
     width: 100vh;
     padding-left: 1em;
+    cursor: pointer;
 }
 
 .content {
@@ -41,7 +42,6 @@ h3 {
     border-radius: 0 0 5px 5px;
     border: 2px solid #F1F1F1;
     height: 4em;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .more-button {
