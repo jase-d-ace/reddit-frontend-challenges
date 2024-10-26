@@ -12,7 +12,7 @@ export default function PaginationComponent({ data=gamesList }) {
         let end = rangeStart + ELEMENTS_PER_PAGE
 
         return (
-            list.slice(rangeStart, end).map(game => <li>{game.title}</li>)
+            list.slice(rangeStart, end).map((game, i) => <li key={i}>{game.title}</li>)
         )
     }
 

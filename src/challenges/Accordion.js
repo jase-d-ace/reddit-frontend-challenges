@@ -16,7 +16,7 @@ class Accordion extends Component {
                 <h1>Challenge:</h1>
                 <h3>Create an accordion component in a React class component (not a functional component)</h3>
                 <div>
-                    {this.state.reviews.map(review => <AccordionItem {...review} />)}
+                    {this.state.reviews.map((review, i) => <AccordionItem key={i} {...review} />)}
                 </div>
             </div>
         )
