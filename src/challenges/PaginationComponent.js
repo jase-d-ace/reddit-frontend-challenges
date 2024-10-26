@@ -31,7 +31,7 @@ export default function PaginationComponent({ data=gamesList }) {
                 </div>
                 <div className="page-numbers">
                     {
-                        [...Array(numberOfPages)].map((num, i) => <span onClick={() => setCurrentPage(i)} className={currentPage === i ? "active" : ""} key={num}>{i+1} </span>)
+                        [...Array(numberOfPages)].map((num, i) => <div onClick={() => setCurrentPage(i)} className={currentPage === i ? "active" : ""} key={num}><span> {i+1} </span> </div>)
                     }
                 </div>
                 <div className="buttons">

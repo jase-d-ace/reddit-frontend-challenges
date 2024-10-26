@@ -25,16 +25,22 @@ h3 {
     flex-direction: row;
     justify-content: center;
     button {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
         font-size: 100%;
         font-family: inherit;
         border: 0;
         padding: 0;
+        background-color: #00D5FF
+    }
+
+    button:disabled {
+        background-color: #B3F2FF
     }
 
     .page-numbers {
+        padding-top: 0.25em;
         width: 10em;
         display: flex;
         flex-direction: row;
@@ -49,13 +55,24 @@ h3 {
     }
 
     span {
-        padding-top: 0.25em;
         font-size: 1.5em;
         cursor: pointer;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: bold;
+        background-color: #B3F2FF;
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
     }
 }
 
 .game-card {
+    background-color: #80EAFF;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -122,9 +139,4 @@ h3 {
 
 .more-button {
     padding-right: 1em;
-}
-
-.active {
-    font-weight: bold;
-    text-decoration: underline;
 }
