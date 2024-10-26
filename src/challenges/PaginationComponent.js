@@ -25,13 +25,19 @@ export default function PaginationComponent({ data=gamesList }) {
                 { displayedElements(gamesList) }
             </div>
             <div className="pagination-controls">
-                <button disabled={currentPage === 0} onClick={() => setCurrentPage(0)} className="page-first">first</button>
-                <button disabled={currentPage === 0} onClick={() => setCurrentPage(currentPage - 1)} className="page-back">back</button>
-                {
-                    [...Array(numberOfPages)].map((num, i) => <span onClick={() => setCurrentPage(i)} className={currentPage === i ? "active" : ""} key={num}>{i+1} </span>)
-                }
-                <button disabled={currentPage === Math.floor(data.length / ELEMENTS_PER_PAGE)} onClick={() => setCurrentPage(currentPage + 1)} className="page-more">more</button>
-                <button disabled={currentPage === Math.floor(data.length / ELEMENTS_PER_PAGE)} onClick={() => setCurrentPage(Math.floor(data.length / ELEMENTS_PER_PAGE))} className="page-last">last</button>
+                <div className="buttons">
+                    <button disabled={currentPage === 0} onClick={() => setCurrentPage(0)} className="page-first">first</button>
+                    <button disabled={currentPage === 0} onClick={() => setCurrentPage(currentPage - 1)} className="page-back">back</button>
+                </div>
+                <div className="page-numbers">
+                    {
+                        [...Array(numberOfPages)].map((num, i) => <span onClick={() => setCurrentPage(i)} className={currentPage === i ? "active" : ""} key={num}>{i+1} </span>)
+                    }
+                </div>
+                <div className="buttons">
+                    <button disabled={currentPage === Math.floor(data.length / ELEMENTS_PER_PAGE)} onClick={() => setCurrentPage(currentPage + 1)} className="page-more">more</button>
+                    <button disabled={currentPage === Math.floor(data.length / ELEMENTS_PER_PAGE)} onClick={() => setCurrentPage(Math.floor(data.length / ELEMENTS_PER_PAGE))} className="page-last">last</button>
+                </div>
             </div>
         </div>
     )

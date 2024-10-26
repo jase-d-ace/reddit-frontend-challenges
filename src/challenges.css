@@ -34,9 +34,24 @@ h3 {
         padding: 0;
     }
 
+    .page-numbers {
+        width: 10em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .buttons {
+        width: 10em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     span {
         padding-top: 0.25em;
         font-size: 1.5em;
+        cursor: pointer;
     }
 }
 
