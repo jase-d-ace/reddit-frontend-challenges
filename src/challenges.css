@@ -15,8 +15,8 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 0.5em;
     column-gap: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .pagination-controls {
@@ -139,4 +139,16 @@ h3 {
 
 .more-button {
     padding-right: 1em;
+}
+
+@media (max-width: 992px) {
+    .games-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 20em;
+    }
 }
