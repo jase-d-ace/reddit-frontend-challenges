@@ -13,10 +13,10 @@ export default function SimulatedPromise() {
             <h1>Challenge:</h1>
             <h3>Create a promise that resolves a list of data to simulate an API call, and a component that displays its data.</h3>
             <div className="games-container">
-                <ul>
+                <ul className="promise-list-container">
                     {
                         games && 
-                        games.map(game => <li key={game.title}>{game.title}</li>)
+                        games.map(game => <li className="promise-title" key={game.title}>{game.title}</li>)
                     }
                 </ul>
             </div>

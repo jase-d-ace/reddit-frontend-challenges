@@ -32,9 +32,28 @@ h3 {
     margin-left: 1em;
 }
 
+.promise-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0.25em;
+    column-gap: 0.25em;
+    padding-right: 2em;
+
+    .promise-title {
+        font-weight: bold;
+        list-style: none;
+        border: 1px solid #55576A;
+        border-radius: 5px;
+        background-color: #80EAFF;
+        height: 2em;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+}
+
 .games-display {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 0.5em;
     column-gap: 0.5em;
     padding-left: 2em;
