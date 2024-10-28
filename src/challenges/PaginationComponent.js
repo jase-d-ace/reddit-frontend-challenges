@@ -5,7 +5,7 @@ import '../challenges.css';
 
 export default function PaginationComponent({ data=gamesList }) {
     const ELEMENTS_PER_PAGE = 10
-    const [currentPage, setCurrentPage] = useState(1)
+    const [currentPage, setCurrentPage] = useState(0)
     const numberOfPages = Math.ceil(data.length / ELEMENTS_PER_PAGE)
 
     const displayedElements = (list) => {
