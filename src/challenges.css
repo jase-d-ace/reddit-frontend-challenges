@@ -119,6 +119,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid #55576A;
+    box-shadow: 4px 4px 4px #DdDdDd;
     padding: 1em;
     border-radius: 5px;
     height: 15em;
