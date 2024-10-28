@@ -48,6 +48,7 @@ h3 {
         height: 2em;
         padding-top: 1em;
         padding-left: 1em;
+        box-shadow: 3px 3px 3px #DdDdDd;
     }
 }
 
