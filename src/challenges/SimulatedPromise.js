@@ -16,7 +16,7 @@ export default function SimulatedPromise() {
                 <ul className="promise-list-container">
                     {
                         games && 
-                        games.map(game => <li className="promise-title" key={game.title}>{game.title}</li>)
+                        games.map(game => <li className="promise-title" key={game.title}>&#x2022; {game.title}</li>)
                     }
                 </ul>
             </div>
