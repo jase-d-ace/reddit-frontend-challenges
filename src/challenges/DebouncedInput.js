@@ -14,7 +14,7 @@ export default function DebouncedInput() {
             <h1>Challenge:</h1>
             <h3>Create a debounce function on an input field that displays a list of filtered items matching the input, updating on an interval passed into the debounce function.</h3>
             <div>
-                <input onChange={e => debounce(e.target.value, 500)} type="text" />
+                <input name="debounced-game-input" onChange={e => debounce(e.target.value, 500)} type="text" />
             </div>
             <div>
                 <ul>
